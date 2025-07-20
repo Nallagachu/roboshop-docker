@@ -1,5 +1,6 @@
-![RoboShop Architecture](https://raw.githubusercontent.com/Nallagachu/roboshop-docker/main/images/docker8.png)
+## 🖼️ RoboShop Frontend UI Preview
 
+![RoboShop Frontend](https://raw.githubusercontent.com/Nallagachu/roboshop-docker/main/images/docker%20(8).png)
 
 # 🛒 RoboShop-Docker: Containerized E-commerce Website
 

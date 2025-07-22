@@ -269,3 +269,50 @@ This repository is designed with best practices to help you build efficient, pro
   Images are versioned and stored in [Docker Hub](https://hub.docker.com/u/durgababu-docker-567), making reuse and testing easier.
 
 > 💡 Reviewing this setup gives you practical insights into Docker image optimization — a critical DevOps and containerization skill.
+
+
+📦 1. Build Docker Images
+Run the following commands to build Docker images for each microservice:
+
+
+docker build -t durgababudocker567/frontend:v1 ./frontend
+docker build -t durgababudocker567/payment:v1 ./payment
+docker build -t durgababudocker567/shipping:v1 ./shipping
+docker build -t durgababudocker567/mysql:v1 ./mysql
+docker build -t durgababudocker567/cart:v1 ./cart
+docker build -t durgababudocker567/user:v1 ./user
+docker build -t durgababudocker567/catalogue:v1 ./catalogue
+docker build -t durgababudocker567/mongodb:v1 ./mongodb
+📝 Replace v1 with your desired tag if versioning.
+
+▶️ 2. Run Docker Containers
+Once the images are built, you can run containers using:
+
+bash
+Copy
+Edit
+docker run -d --name frontend -p 8080:80 durgababudocker567/frontend:v1
+docker run -d --name payment durgababudocker567/payment:v1
+docker run -d --name shipping durgababudocker567/shipping:v1
+docker run -d --name mysql durgababudocker567/mysql:v1
+docker run -d --name cart durgababudocker567/cart:v1
+docker run -d --name user durgababudocker567/user:v1
+docker run -d --name catalogue durgababudocker567/catalogue:v1
+docker run -d --name mongodb durgababudocker567/mongodb:v1
+📌 Add environment variables, volume mounts, or port mappings as needed.
+
+📤 3. Push Images to Docker Hub
+After building and verifying the images, push them to Docker Hub:
+
+bash
+Copy
+Edit
+docker push durgababudocker567/frontend:v1
+docker push durgababudocker567/payment:v1
+docker push durgababudocker567/shipping:v1
+docker push durgababudocker567/mysql:v1
+docker push durgababudocker567/cart:v1
+docker push durgababudocker567/user:v1
+docker push durgababudocker567/catalogue:v1
+docker push durgababudocker567/mongodb:v1
+  

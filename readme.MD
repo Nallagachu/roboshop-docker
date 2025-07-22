@@ -289,8 +289,7 @@ docker build -t durgababudocker567/mongodb:v1 ./mongodb
 Once the images are built, you can run containers using:
 
 bash
-Copy
-Edit
+
 docker run -d --name frontend -p 8080:80 durgababudocker567/frontend:v1
 docker run -d --name payment durgababudocker567/payment:v1
 docker run -d --name shipping durgababudocker567/shipping:v1
@@ -305,8 +304,7 @@ docker run -d --name mongodb durgababudocker567/mongodb:v1
 After building and verifying the images, push them to Docker Hub:
 
 bash
-Copy
-Edit
+
 docker push durgababudocker567/frontend:v1
 docker push durgababudocker567/payment:v1
 docker push durgababudocker567/shipping:v1
